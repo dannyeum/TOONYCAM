@@ -1,0 +1,7 @@
+{
+  "name": "Toonify Cam",
+  "description": "Transform your photos into vibrant, high-quality cartoon art using AI.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
