@@ -28,7 +28,7 @@ export const cartoonizeImage = async (base64Image: string, style: CartoonStyle):
     const response = await ai.models.generateContent({
       // [수정 2] 모델 변경: 무료로 사용 가능한 모델로 변경
       // 기존 gemini-2.5-flash-image는 무료 할당량이 없어 429 에러가 발생합니다.
-      model: 'gemini-2.0-flash-exp', 
+      model: 'gemini-1.5-flash', 
       contents: {
         parts: [
           {
