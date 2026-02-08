@@ -14,7 +14,7 @@ export const cartoonizeImage = async (base64Image: string, style: CartoonStyle):
   try {
     // [1단계] Gemini 1.5 Flash에게 사진 속 인물 묘사를 부탁합니다.
     // (이 모델은 그림을 못 그리지만, 사진은 아주 잘 봅니다.)
-    const visionModel = genAI.getGenerativeModel({ model: "gemini-pro" });
+    const visionModel = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
     
     const descriptionPrompt = `
       Describe the person in this photo in detail to generate a cartoon character.
